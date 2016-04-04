@@ -1,5 +1,5 @@
 /* Жахливий калькулятор від Боді ))
-v1.02*/
+v1.03*/
 #include <iostream> 
 #include <cstdlib>
 #include <string>
@@ -8,38 +8,34 @@ using namespace std;
 void calc ()
 {
 	
-		setlocale(0, "");
+	setlocale(LC_ALL, "Russian");
 	char p = '+';
 	char m = '-';
 	char n = '*';
 	char d = '/';
 	char x;
 	double a,b,z;
-	cout << "Vvedit pershe chuslo: ";
+	cout << "Введiть перше число: ";
 	cin >> a;
-	cout << "Vvedit znak operacii: ";
+	cout << "Введiть знак для операцii: ";
 	cin >> x;
-	cout << "Vvedit druge chuslo: ";
+	cout << "Введiть друге число: ";
 	cin >> b;
 	
 	if (x == p) {
 		z = a + b;
 		cout << "= " << z << endl;
-		return z;
 	} else if (x == m) {
 		z = a - b;
 		cout << "= " << z << endl;
-		return z;
 	} else if (x == n) {
 		z = a * b;
 		cout << "= " << z << endl;
-		return z;
 	}  else if (x == d) {
 		z = a / b;
 		cout << "= " << z << endl;
-		return z;
 	} else {
-		cout << "Vvedenuj nevirnuj znak operacii" << endl;
+		cout << "Введено невiрний знак операцii" << endl;
 		cout << " " << endl;
 	}
 	calc ();
