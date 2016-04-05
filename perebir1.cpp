@@ -4,7 +4,7 @@
 using namespace std;
 /*count how many tickets are lucky tickets for bus. Ticket is lucky when first and last digits of number of ticket is equal*/
 
-x,y,z = 0;
+int x,y,z = 0;
 
 int z_count() 
 {
@@ -12,7 +12,7 @@ do {
 z++;
 } while (z<10); 
 if (x == z){
-	cout << "Lucky ticket" << x y z << endl;
+	cout << "Lucky ticket" << x << y << z << endl;
 } else {
 	return 0;
 }}
@@ -28,7 +28,7 @@ y++;
 z_count();
 } while (y<10);
 if (x == z){
-	cout << "Lucky ticket" << x y z << endl;
+	cout << "Lucky ticket" << x << y << z << endl;
 } else {
 	return 0;
 	}
@@ -44,9 +44,8 @@ x++;
 }
 y_count();
 } while (x<10);
-} while (y<10);
 if (x == z){
-	cout << "Lucky ticket" << x y z << endl;
+	cout << "Lucky ticket" << x << y << z << endl;
 } else {
 	return 0;
 	}
@@ -57,4 +56,3 @@ int main()
 	x_count();
 	return 0;
 }
-
