@@ -54,7 +54,7 @@ if (x == z){
 
 int main()
 {
-	z_count();
+	x_count();
 	return 0;
 }
 
