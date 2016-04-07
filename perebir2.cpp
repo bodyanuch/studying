@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	double x = 0;
+	float x = 0;
 	int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0; 
 
 	cout << "Vvedit summu dlya rozminy" << endl;
@@ -33,9 +33,8 @@ int main() {
 		x = x - 0.05;
 	}
 	cout << "5kop = " << d << endl;
-	cout << "x=" << x << endl;
 		
-	while (x >= 0.02) {
+	while (x > 0.01) {
 		e++;
 		x = x - 0.02;
 	}
