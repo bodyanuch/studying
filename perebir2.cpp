@@ -7,7 +7,7 @@ int main() {
 	float x = 0;
 	int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0; 
 
-	cout << "Vvedit summu dlya rozminy" << endl;
+	cout << "Vvedit summu dlya rozminy ( y formati x.xx)" << endl;
 	cin >> x;
 	
 	while (x >= 0.5) {
@@ -45,4 +45,6 @@ int main() {
 		x = x - 0.01;
 	}
 	cout << "1kop = " << f << endl;
+	
+	system("pause");
 } 
